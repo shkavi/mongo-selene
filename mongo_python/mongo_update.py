@@ -57,7 +57,7 @@ def _create_result_create_parser(parser):
 
 
 def update_build(args):
-    server = selene_server.SeleneServerBuilder().with_url(args.receiver).construct()
+    server = mongo_server.SeleneServerBuilder().with_url(args.receiver).construct()
     build = (
         selene_build.BuildBuilder()
         .with_name(args.build_name)
@@ -84,7 +84,7 @@ def update_build(args):
 
 
 def create_result(args):
-    server = selene_server.SeleneServer(url=args.receiver)
+    server = mongo_server.SeleneServer(url=args.receiver)
     branch = selene_branch.Branch(name=args.branch_name)
     build_result = "SUCCESS" if args.result == "pass" else "FAILURE"
     build = selene_build.Build(name=args.build_name, branch=branch, status=build_result)
