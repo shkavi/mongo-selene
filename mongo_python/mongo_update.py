@@ -3,7 +3,7 @@ import argparse
 from . import branch as selene_branch
 from . import build as selene_build
 from . import log_file
-from . import selene_server
+from . import mongo_server
 from . import test as selene_test_result
 
 
