@@ -29,7 +29,7 @@ sys.path.append(script_dir)
 from mongo_python.test import TestBuilder
 from mongo_python.output_file import OutputFileBuilder
 from mongo_python.log_file import LogFileBuilder
-from mongo_python.selene_server import SeleneServerBuilder
+from mongo_python.mongo_server import SeleneServerBuilder
 from mongo_python.build import BuildBuilder
 # pylint: disable=W0603
 _LOGGER = None
