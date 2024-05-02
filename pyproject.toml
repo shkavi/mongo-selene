@@ -17,7 +17,7 @@ default = true
 
 [tool.poetry.scripts]
 mongo-post = "mongo_python.mongo_create:test"
-mongo="mongo_python.mongo_update:run_cli"
+mongo= "mongo_python.mongo_update:run_cli"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.0"
